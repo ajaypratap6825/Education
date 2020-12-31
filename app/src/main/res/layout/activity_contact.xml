@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ContactActivity">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/AppTheme.AppBarOverlay">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="?attr/colorPrimary"
+            app:theme="@style/ThemeOverlay.AppCompat.Light" />
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="100dp"
+        android:fontFamily="sans-serif"
+        android:id="@+id/heading"
+        android:gravity="center"
+        android:text="We'd love to hear from you"
+        android:textColor="@color/black"
+        android:textSize="20dp"
+        android:textStyle="bold"/>
+
+
+    <TextView
+        android:id="@+id/subHeading"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/heading"
+        android:layout_marginTop="30dp"
+        android:background="#F1EDED"
+        android:fontFamily="sans-serif"
+        android:gravity="center"
+        android:padding="17dp"
+        android:text="For all kind of queries related to courses, zenclass and other platform relted informatiom. "
+        android:textColor="@color/black"
+        android:textSize="14dp" />
+
+    <ImageView
+        android:layout_width="38dp"
+        android:layout_height="38dp"
+        android:src="@drawable/email"
+        android:layout_below="@id/subHeading"
+        android:layout_marginTop="18dp"
+        android:id="@+id/image1"
+        android:layout_marginLeft="15dp"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:fontFamily="sans-serif"
+        android:id="@+id/email"
+        android:layout_marginTop="18dp"
+        android:text="Email"
+        android:textColor="@color/black"
+        android:textSize="17dp"
+        android:gravity="fill_vertical"
+        android:paddingLeft="65dp"
+        android:layout_alignLeft="@id/email"
+        android:layout_below="@id/subHeading"/>
+
+    <Button
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:layout_below="@id/subHeading"
+        android:layout_alignParentEnd="true"
+        android:id="@+id/sendEmail"
+        android:layout_marginRight="30dp"
+        android:layout_marginTop="18dp"
+        android:background="@drawable/arrow"
+        android:layout_alignRight="@id/email" />
+
+    <TextView
+        android:id="@+id/lastHeading"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/email"
+        android:layout_marginTop="20dp"
+        android:background="#F1EDED"
+        android:fontFamily="sans-serif"
+        android:gravity="center"
+        android:padding="17dp"
+        android:text="You will get a reply back from us within 48 hours. "
+        android:textColor="@color/black"
+        android:textSize="14dp" />
+
+</RelativeLayout>
